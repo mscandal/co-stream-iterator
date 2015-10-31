@@ -1,0 +1,20 @@
+{
+  "name": "co-stream-iterator",
+  "version": "1.0.0",
+  "description": "Generator abstraction for processing streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Scandalis",
+  "license": "MIT",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mscandal/co-stream-iterator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mscandal/co-stream-iterator/issues"
+  },
+  "homepage": "https://github.com/mscandal/co-stream-iterator#readme"
+}
