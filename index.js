@@ -1,7 +1,7 @@
 module.exports = function(stream, options) {
-	const writeable = new require('stream').Writable(options);
+	var writeable = new require('stream').Writable(options);
 
-	let process, cb, started = false, finished = false;
+	var process, cb, started = false, finished = false;
 
 	writeable._write = function(chunk, encoding, callback) {
 		process({chunk, encoding});
@@ -30,7 +30,7 @@ module.exports = function(stream, options) {
 
 		cb && cb();
 
-		const data = yield hasChunk;
+		var data = yield hasChunk;
 		return data;
 	};
 };
