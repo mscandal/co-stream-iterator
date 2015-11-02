@@ -4,7 +4,10 @@ module.exports = function(stream, options) {
 	var process, cb, started = false, finished = false;
 
 	writeable._write = function(chunk, encoding, callback) {
-		process({chunk, encoding});
+		process({
+			chunk: chunk,
+			encoding: encoding
+		});
 		cb = callback;
 	};
 
@@ -13,8 +16,8 @@ module.exports = function(stream, options) {
 	});
 
 	const hasChunk = function(cb) {
-		process = (chunk) => {
-			cb(null, chunk);
+		process = (data) => {
+			cb(null, data);
 		};
 	};
 

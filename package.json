@@ -1,6 +1,6 @@
 {
   "name": "co-stream-iterator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generator abstraction for processing streams",
   "main": "index.js",
   "scripts": {
